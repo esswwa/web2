@@ -1,0 +1,38 @@
+version: '3.4'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  app_api:
+    image: ${DOCKER_REGISTRY-}webapi
+    depends_on:
+    - "app_db"
+    container_name: app_api
+    ports:
+    - "80:80"
+    build:
+        context: .
+        dockerfile: api
+    environment:
+    - ConnectionStrings__DefaultConnection=host=app_db;username=root;password=1234;port=3306;database=dbcontext;
+    - ASPNETCORE_URLS=http://+:80
+    networks:
+    - dev
+
+  app_db:
+    image: mysql
+    container_name: app_db
+    environment:
+    - MYSQL_ROOT_PASSWORD=1234
+    - MYSQL_DATABASE=dbcontext
+    ports:
+    - "3307:3306"
+    restart: always
+    volumes:
+    - app_data:/var/lib/mysql/
+    networks:
+    - dev
+volumes:
+  app_data:
