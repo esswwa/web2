@@ -9,12 +9,19 @@
       Title="Menu">
 
     <Grid>
-        <ListView x:Name="listView" ItemsSource="{Binding Path=listView}">
+        <ListView x:Name="listView" ItemsSource="{Binding Path=listView}" SelectedItem="{Binding Path=SelectedItem}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Path=Name}" />
                     <GridViewColumn Header="Surname" Width="50" DisplayMemberBinding="{Binding Path=Surname}" />
                     <GridViewColumn Header="Post" Width="50" DisplayMemberBinding="{Binding Path=Post}" />
+                    <GridViewColumn Header="Edit" Width="50">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Редактировать" Click="Button_Click"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>

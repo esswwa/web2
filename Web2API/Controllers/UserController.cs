@@ -26,7 +26,7 @@ namespace Web2API.Controllers
             return await _context.Users.ToListAsync();
         }
 
-        [HttpPost]
+        [HttpPost("/createUser")]
         public async Task<ActionResult<IEnumerable<User>>> createUser(UserDTO user)
         {
             try
