@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web2API", "Web2API\Web2API.csproj", "{81D865F5-77E3-4C23-9692-BF2B82029D8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWPF", "WebWPF\WebWPF.csproj", "{214A471A-3326-4971-B51D-34F0E0AA7E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81D865F5-77E3-4C23-9692-BF2B82029D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D865F5-77E3-4C23-9692-BF2B82029D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D865F5-77E3-4C23-9692-BF2B82029D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D865F5-77E3-4C23-9692-BF2B82029D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214A471A-3326-4971-B51D-34F0E0AA7E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214A471A-3326-4971-B51D-34F0E0AA7E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214A471A-3326-4971-B51D-34F0E0AA7E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214A471A-3326-4971-B51D-34F0E0AA7E42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {944D835A-0664-4C8D-B31A-5F0CEE4E0B66}
+	EndGlobalSection
+EndGlobal
